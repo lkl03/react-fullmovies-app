@@ -12,8 +12,8 @@ export const movieType = {
 }
 
 export const tvType = {
-    upcoming: 'upcoming',
     popular: 'popular',
+    top_rated: 'top_rated',
     on_the_air: 'on_the_air'
 }
 
@@ -40,7 +40,7 @@ const tmdbApi = {
     },
     credits: (cate, id) => {
         const url = category[cate] + '/' + id + '/credits'
-        return axiosClient.get(url, params)
+        return axiosClient.get(url, {params: {}})
     },
     similar: (cate, id, params) => {
         const url = category[cate] + '/' + id + '/similar'

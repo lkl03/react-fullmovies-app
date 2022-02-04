@@ -6,21 +6,21 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Home from './pages/Home';
 import Catalog from './pages/Catalog';
-import Detail from './pages/Detail';
+import Detail from './pages/detail/Detail';
 
 function App() {
   return (
     <div>
-      <Header></Header>
         <Router>
+          <Header></Header>
           <Routes>
             <Route exact path="/" element ={<Home/>} />
             <Route path="/:category/search/:keyword" element={<Catalog/>} />
             <Route path="/:category/" element={<Catalog/>} />
             <Route path="/:category/:id" element={<Detail/>} />
           </Routes>
+          <Footer></Footer>
         </Router>
-      <Footer></Footer>
     </div>
   );
 }
