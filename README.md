@@ -1,4 +1,4 @@
-# Landing Page
+# Movies App
 
 This is a fully responsive movies app where you can see some of the latest movies and tv shows, search for an specific one and see further information of each one. It was created using React JS, fetching the IMDB API and styled with SASS.
 
